@@ -1,13 +1,15 @@
-import React from 'react'
+import React from 'react';
 
 export default function CampoConInfo(props) {
-  let {categoria, descripcion}= props
+  console.log(props)
+  let {nombre, description}= props
+
   return (
-    <>
+  
     <div>
-       <h2>{categoria}</h2>  
-       <p>{descripcion}</p> 
+       <h2>{nombre}</h2>  
+       <p>{description}</p> 
        </div>
-       </>
+       
   )
 }

@@ -1,8 +1,12 @@
 import React from 'react'
 
 export default function Flechita(props) {
-    let {alt,src, onClick}= props
+  console.log(props)
+  let {src}=props
+  let {alt}=props
+  let {onClick}= props
+    
   return (
-    <button><img src={src} alt={alt} onClick={onClick} /></button>
+    <button onClick={onClick} ><img src={src} alt={alt} /></button>
   )
 }
